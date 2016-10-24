@@ -14,7 +14,5 @@ RUN   /bin/bash -c "source /etc/profile.d/rvm.sh" && \
       /usr/local/rvm/bin/rvm install $RUBY_VERSIONS && \
       /usr/local/rvm/bin/rvm $RUBY_VERSIONS --verbose do gem install bundler
 
-USER ninja
-
 VOLUME ["/root/.gitconfig", "/root/workspace"]
 EXPOSE 2300 3000 9292
